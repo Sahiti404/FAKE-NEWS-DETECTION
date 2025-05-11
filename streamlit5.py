@@ -14,8 +14,8 @@ def custom_tokenizer(text):
 
 @st.cache_data
 def load_data():
-    true_df = pd.read_csv("C:\\Users\\pisip\\Desktop\\3-1ps\\python\\Newsdataset\\True.csv")
-    fake_df = pd.read_csv("C:\\Users\\pisip\\Desktop\\3-1ps\\python\\Newsdataset\\Fake.csv")
+    true_df = pd.read_csv("C:\\Users\\pisip\\Desktop\\3-1ps\\python\\Newsdataset\\True_small.csv")
+    fake_df = pd.read_csv("C:\\Users\\pisip\\Desktop\\3-1ps\\python\\Newsdataset\\Fake_small.csv")
 
     true_df['label'] = 'TRUE'
     fake_df['label'] = 'FAKE'
